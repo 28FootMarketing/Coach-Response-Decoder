@@ -1,11 +1,8 @@
 import streamlit as st
 import openai
 import os
-from dotenv import load_dotenv
-
-# Load API key securely from .env file
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+import streamlit as st
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # Set mobile-friendly page layout
 st.set_page_config(page_title="Coach Response Decoder", layout="centered")
