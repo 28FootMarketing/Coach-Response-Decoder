@@ -2,7 +2,7 @@ import streamlit as st
 import openai
 import os
 import streamlit as st
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+openai.api_key = st.secrets[OPENAI_API_KEY]
 
 # Set mobile-friendly page layout
 st.set_page_config(page_title="Coach Response Decoder", layout="centered")
